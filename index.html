@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>impress-demo</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="impress-demo.css">
+    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+    .active {
+        opacity: 1;
+        transform: opacity 1s ease;
+    }
+
+    .past {
+        opacity: 0;
+        transform: opacity 1s ease;
+    }
+
+    .future {
+        opacity: 0;
+        transform: opacity 1s ease;
+    }
+    </style>
+</head>
+
+<body class="impress-not-supported">
+    <div class="fallback-message">
+        <p>your beowser doesn't support this</p>
+    </div>
+    <div id="impress" style="text-align: center;">
+        <div class="step slide" data-x="-3000" data-y="-3500" data-scale="4">
+            <h1 id="step-1" style="font-size: 50px;">大前端web开发</h1>
+            <img class="img-rounded img-responsive" src="img/image1.jpg" alt="">
+        </div>
+        <div class="step" data-x="-2800" data-y="-3000" data-scale="0.2">
+            <img id="step-2" class="img-rounded img-responsive" src="img/image1-2.jpg" alt="">
+        </div>
+        <div class="step slide" data-x="-1000" data-y="1000" data-scale="3">
+            <h1 id="step-3" style="font-size: 50px;margin-bottom: 40px;">什么是web开发？</h1>
+            <img class="img-rounded" src="img/image2.jpeg" alt="">
+        </div>
+        <div class="step" data-x="500" data-y="-1500">
+            <h1 style="font-size: 50px;margin-bottom: 80px;">你可能听过关于web开发的词汇</h1>
+            <img id="step-4" class="img-rounded" src="img/image5.jpg" alt="" style="transform: scale(1.2);">
+        </div>
+        <div class="step" data-x="2000" data-y="-1500">
+            <img id="step-5" class="img-rounded" src="img/image3.png" alt="">
+        </div>
+        <div class="step" data-x="2000" data-y="-500" data-rotate-z="180">
+            <img id="step-6" class="img-rounded img-responsive" src="img/image4.png" alt="">
+        </div>
+        <div class="step" data-x="3000" data-y="-1500" data-scale="0.4">
+            <img id="step-7" class="img-rounded " src="img/image8.jpg" alt="" style="transform: scale(1.3);">
+        </div>
+        <div class="step" data-x="6000" data-y="1000" data-scale="1.5">
+            <img id="step-8" class="img-rounded" src="img/image9.png" alt="">
+        </div>
+        <div class="step" data-x="8000" data-y="1000" data-scale="0.6">
+            <img id="step-9" class="img-rounded" src="img/image13.png" alt="">
+        </div>
+        <div class="step" data-x="9000" data-y="800" data-scale="0.2" data-rotate-z="45">
+            <img id="step-10" class="img-rounded" src="img/image10.png" alt="">
+        </div>
+        <div class="step" data-x="8000" data-y="1000" data-scale="0.6">
+            <img id="step-11" class="img-rounded" src="img/image13.png" alt="">
+        </div>
+        <div class="step" data-x="9000" data-y="1200" data-scale="0.2" data-rotate-z="-45">
+            <div class="col-sm-12 col-md-8 col-md-offset-2">
+                <img id="step-12-1" class="img-rounded img-responsive" src="img/image11.png" alt="" style="margin-bottom: 20px;">
+            </div>
+            <div class="col-sm-12 col-md-8 col-md-offset-2">
+                <img id="step-12-2" class="img-rounded img-responsive" src="img/image12.jpg" alt="">
+            </div>
+        </div>
+        <div class="step" data-x="6000" data-y="1000" data-scale="1.5">
+            <img class="img-rounded" src="img/image9.png" alt="">
+        </div>
+        <div class="step" data-x="7500" data-y="2500" data-scale="0.6" data-rotate="45">
+            <img id="step-14" class="img-rounded" src="img/image14.png" alt="">
+        </div>
+        <div class="step" data-x="8500" data-y="3000" data-scale="0.2" data-rotate="0">
+            <div id="step-15-1" class="col-sm-12 col-md-6 col-md-offset-3" style="margin-bottom: 20px;">
+                <img class="img-rounded img-responsive" src="img/image15.png" alt="">
+            </div>
+            <div id="step-15-2" class="col-sm-12 col-md-6 col-md-offset-3" style="margin-bottom: 20px;">
+                <img class="img-rounded img-responsive" src="img/image16.png" alt="">
+            </div>
+            <div id="step-15-3" class="col-sm-12 col-md-10 col-md-offset-1" style="margin-bottom: 20px;">
+                <img class="img-rounded img-responsive" src="img/image17.png" alt="">
+            </div>
+        </div>
+        <div class="step" data-x="6000" data-y="1000" data-scale="1.5">
+            <img class="img-rounded" src="img/image9.png" alt="">
+        </div>
+        <div class="step" data-x="6000" data-y="3000" data-scale="0.6" data-rotate="90">
+            <img id="step-17" class="img-rounded" src="img/image18.png" alt="">
+        </div>
+        <div class="step" data-x="6000" data-y="4000" data-scale="0.2" data-rotate="0">
+            <div style="transform: scale(1.4);position: relative;top: -40px;">
+                <div class="col-sm-12 col-md-6" style="margin-bottom: 25px;">
+                    <img id="step-16-1" class="img-rounded img-responsive" src="img/image19.png" alt="">
+                </div>
+                <div class="col-sm-12 col-md-6" style="margin-bottom: 30px;">
+                    <img id="step-16-2" class="img-rounded img-responsive" src="img/image20.png" alt="">
+                </div>
+                <div class="col-sm-12 col-md-6" style="margin-bottom: 30px;">
+                    <img id="step-16-3" class="img-rounded img-responsive" src="img/image21.png" alt="">
+                </div>
+                <div class="col-sm-12 col-md-6" style="margin-bottom: 30px;">
+                    <img id="step-16-4" class="img-rounded img-responsive" src="img/image22.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="step" data-x="6000" data-y="1000" data-scale="1.5">
+            <img class="img-rounded" src="img/image9.png" alt="">
+        </div>
+        <div class="step" data-x="4500" data-y="2500" data-scale="0.6" data-rotate="135">
+            <img id="step-20" class="img-rounded" src="img/image23.png" alt="">
+        </div>
+        <div class="step" data-x="3500" data-y="3000" data-scale="0.2" data-rotate="90">
+            <div id="step-17-1" class="col-sm-12 col-md-8 col-md-offset-2" style="margin-bottom: 20px;">
+                <img class="img-rounded img-responsive" src="img/image24.png" alt="">
+            </div>
+            <div id="step-17-2" class="col-sm-12 col-md-8 col-md-offset-2" style="margin-bottom: 20px;">
+                <img class="img-rounded img-responsive" src="img/image25.png" alt="">
+            </div>
+            <div id="step-17-3" class="col-sm-12 col-md-8 col-md-offset-2" style="margin-bottom: 20px;">
+                <img class="img-rounded img-responsive" src="img/image26.png" alt="">
+            </div>
+        </div>
+        <div class="step" data-x="6000" data-y="1000" data-scale="1.5">
+            <img class="img-rounded" src="img/image9.png" alt="">
+        </div>
+        <div class="step" data-x="4000" data-y="1000" data-scale="0.6" data-rotate="180">
+            <img id="step-23" class="img-rounded" src="img/image27.png" alt="">
+        </div>
+        <div class="step" data-x="3000" data-y="1000" data-scale="0.2" data-rotate="135">
+            <div class="col-sm-12 col-md-8 col-md-offset-2" style="margin-bottom: 20px;">
+                <img id="step-18-1" class="img-rounded img-responsive" src="img/image28.png" alt="">
+            </div>
+            <div class="col-sm-12 col-md-8 col-md-offset-2" style="margin-bottom: 20px;">
+                <img id="step-18-2" class="img-rounded img-responsive" src="img/image29.png" alt="">
+            </div>
+            <div class="col-sm-12 col-md-8 col-md-offset-2" style="margin-bottom: 20px;">
+                <img id="step-18-3" class="img-rounded img-responsive" src="img/image30.png" alt="">
+            </div>
+        </div>
+        <div class="step" data-x="6000" data-y="1000" data-scale="1.5">
+            <img class="img-rounded" src="img/image9.png" alt="">
+        </div>
+        <div class="step" data-x="4500" data-y="-500" data-scale="0.6" data-rotate="225">
+            <img id="step-26" class="img-rounded" src="img/image31.png" alt="">
+        </div>
+        <div class="step" data-x="3500" data-y="-1000" data-scale="0.2" data-rotate="180">
+            <div class="col-sm-12 col-md-12">
+                <img id="step-27" class="img-rounded img-responsive" src="img/image32.png" alt="">
+            </div>
+        </div>
+        <div class="step" data-x="6000" data-y="1000" data-scale="1.5">
+            <img class="img-rounded" src="img/image9.png" alt="">
+        </div>
+        <div class="step" data-x="6000" data-y="-1000" data-scale="0.6" data-rotate="270">
+            <img id="step-29" class="img-rounded" src="img/image33.png" alt="">
+        </div>
+        <div class="step" data-x="6000" data-y="-2000" data-scale="0.2" data-rotate="225">
+            <div class="col-sm-12 col-md-12" style="margin-bottom: 20px;">
+                <img id="step-28-1" class="img-rounded img-responsive" src="img/image34.png" alt="">
+            </div>
+            <div class="col-sm-12 col-md-12">
+                <img id="step-28-2" class="img-rounded img-responsive" src="img/image35.png" alt="">
+            </div>
+        </div>
+        <div class="step" data-x="6000" data-y="1000" data-scale="1.5">
+            <img class="img-rounded" src="img/image9.png" alt="">
+        </div>
+        <div class="step" data-x="7500" data-y="-500" data-scale="0.6" data-rotate="315">
+            <img id="step-32" class="img-rounded" src="img/image36.png" alt="">
+        </div>
+        <div class="step" data-x="8500" data-y="-1000" data-scale="0.2" data-rotate="270">
+            <div class="col-sm-12 col-md-8 col-md-offset-2" style="margin-bottom: 20px;">
+                <img id="step-33-1" class="img-rounded img-responsive" src="img/image37.png" alt="">
+            </div>
+            <div class="col-sm-12 col-md-8 col-md-offset-2" style="margin-bottom: 20px;">
+                <img id="step-33-2" class="img-rounded img-responsive" src="img/image38.png" alt="">
+            </div>
+            <div class="col-sm-12 col-md-8 col-md-offset-2" style="margin-bottom: 20px;">
+                <img id="step-33-3" class="img-rounded img-responsive" src="img/image39.jpg" alt="">
+            </div>
+        </div>
+        <div class="step" data-x="6000" data-y="1000" data-scale="1.5">
+            <img class="img-rounded" src="img/image9.png" alt="">
+        </div>
+        <div class="step" data-x="0" data-y="4000" data-scale="1.5">
+            <img id="step-35" class="img-rounded" src="img/image39.png" alt="">
+        </div>
+        <div class="step" data-x="2000" data-y="3500" data-scale="0.6">
+            <div style="transform: scale(1.4);position: relative;top: -70px;">
+                <div id="step-36-1" class="col-sm-6" style="margin-bottom: 20px;">
+                    <img class="img-rounded img-responsive" src="img/image40.png" alt="">
+                </div>
+                <div id="step-36-2" class="col-sm-6" style="margin-bottom: 50px;">
+                    <img class="img-rounded img-responsive" src="img/image42.jpg" alt="">
+                </div>
+                <div id="step-36-3" class="col-sm-6" style="margin-bottom: 20px;">
+                    <img class="img-rounded img-responsive" src="img/image41.jpg" alt="">
+                </div>
+                <div id="step-36-4" class="col-sm-6" style="margin-bottom: 20px;">
+                    <img class="img-rounded img-responsive" src="img/image43.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="step" data-x="2000" data-y="4000" data-scale="0.6" data-rotate="180">
+            <div style="transform: scale(1.4);position: relative;top: -60px;">
+                <div id="step-37-1" class="col-sm-6" style="margin-bottom: 20px;">
+                    <img class="img-rounded img-responsive" src="img/image44.png" alt="">
+                </div>
+                <div id="step-37-2" class="col-sm-6" style="margin-bottom: 20px;">
+                    <img class="img-rounded img-responsive" src="img/image45.jpg" alt="">
+                </div>
+                <div id="step-37-3" class="col-sm-6" style="margin-bottom: 20px;">
+                    <img class="img-rounded img-responsive" src="img/image45.png" alt="">
+                </div>
+                <div id="step-37-4" class="col-sm-6" style="margin-bottom: 20px;">
+                    <img class="img-rounded img-responsive" src="img/image46.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="step" data-x="-3000" data-y="4000" data-scale="1.5">
+            <img id="step-38" class="img-rounded" src="img/image46.png" alt="">
+        </div>
+        <div class="step" data-x="-3500" data-y="3000" data-scale="0.6" data-rotate="90">
+            <div class="col-md-8" style="transform: scale(1.4);padding-bottom: 60px;">
+            	<img id="step-39-1" class="img-rounded" src="img/image47.jpg" alt="">
+            </div>
+            <div class="col-md-8 col-md-offset-4">
+            	<img id="step-39-2" class="img-rounded" src="img/image48.jpg" alt="">
+            </div>
+        </div>
+        <div class="step" data-x="-4500" data-y="3000" data-scale="0.6" data-rotate="180">
+            <div class="col-md-8" style="transform: scale(1.3);padding-bottom: 40px;">
+            	<img id="step-40-1" class="img-rounded" src="img/image49.jpg" alt="">
+            </div>
+            <div class="col-md-8 col-md-offset-4" style="transform: scale(1.5);">
+            	<img id="step-40-2" class="img-rounded" src="img/image52.jpg" alt="">
+            </div>
+        </div>
+        <div class="step" data-x="-4500" data-y="2000" data-scale="0.6" data-rotate="270">
+            <div class="col-md-6" style="transform: scale(1.3);padding-right: 40px;">
+            	<img id="step-41-1" class="img-rounded" src="img/image50.jpg" alt="">
+            </div>
+            <div class="col-md-6" style="transform: scale(1.3);">
+            	<img id="step-41-2" class="img-rounded" src="img/image51.jpg" alt="">
+            </div>
+        </div>
+        <div class="step" data-x="-5500" data-y="3000" data-scale="0.6" data-rotate="360">
+        	<div style="transform: scale(1.5);">
+        		<img id="step-42" class="img-rounded" src="img/image53.jpg" alt="">	
+        	</div>
+        </div>
+        <div class="step" data-x="-5500" data-y="2000" data-scale="0.6" date-rotate="270">
+        	<div style="transform: scale(1.5);">
+        		<img id="step-43" class="img-rounded" src="img/image54.jpg" alt="">	
+        	</div>
+        </div>
+        <!-- <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10"></div> -->
+    </div>
+    <script src="impress.js"></script>
+    <script>
+    var impress = impress();
+    impress.init();
+    </script>
+    <script src="index.js"></script>
+</body>
+
+</html>
